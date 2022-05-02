@@ -1,0 +1,40 @@
+﻿<Window x:Class="DZ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DZ"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button x:Name="OpenDb" Content="OpenDb" Click="OpenDb_Click"/>
+            <Button x:Name="CloseDb" Content="CloseDb" Click="CloseDb_Click"/>
+            <Button x:Name="StateConnection" Content="State Connection" Click="StateConnection_Click"/>
+            <Button x:Name="AllGoodsInfo" Content="AllGoodsInfo" Click="AllGoodsInfo_Click"/>
+            <ComboBox x:Name="comboBoxAllType" FontFamily="Verdana" Foreground="DarkViolet"/>
+            <Button x:Name="ShowSelectGoods" Content="ShowTypeGoods" Background="Orange" Click="ShowSelectGoods_Click"/>
+            <ComboBox x:Name="comboBoxAllManagers" FontFamily="Verdana" Foreground="Magenta"/>
+            <Button x:Name="ShowManagerGoods" Content="ShowManagerGoods" Background="Orange" Click="ShowManagerGoods_Click"/>
+            <Button x:Name="CountManagerSaleGoods" Content="Count Manager Sale Goods" Background="Red" Click="CountManagerSaleGoods_Click"/>
+            <Button x:Name="MinCountGoods" Content="MinCountGoods" Background="Aqua" Click="MinCountGoods_Click"/>
+            <Button x:Name="MaxCountGoods" Content="MaxCountGoods" Background="Lime" Click="MaxCountGoods_Click"/>
+            <Button x:Name="MinPriceGoods" Content="MinPriceGoods" Background="Aqua" Click="MinPriceGoods_Click"/>
+            <Button x:Name="MaxPriceGoods" Content="MaxPriceGoods" Background="Lime" Click="MaxPriceGoods_Click"/>
+            <ComboBox x:Name="comboBoxAllBuyer"/>
+            <Button x:Name="ShowBuyerGoods" Content="Show_Buyer_Goods" Background="Cyan" Click="ShowBuyerGoods_Click"/>
+            <Button x:Name="LastBuyDate" Content="LastBuyDate" Background="Yellow" Click="LastBuyDate_Click"/>
+            <Button x:Name="AvgGoodsInTypes" Content="Avg Goods In Types" Background="RosyBrown" Click="AvgGoodsInTypes_Click"/>
+            
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <Label x:Name="labelName"/>
+            <Label x:Name="labelResult"/>
+            <ListView x:Name="listView"/>
+        </StackPanel>        
+    </Grid>
+</Window>
